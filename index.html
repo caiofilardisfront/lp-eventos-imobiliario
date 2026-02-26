@@ -166,7 +166,7 @@
 
 <body class="font-sans antialiased overflow-x-hidden">
 
-    <div
+    <!-- <div
         class="bg-primary text-black text-xs md:text-sm font-bold py-3 px-4 text-center tracking-widest uppercase flex justify-center items-center shadow-lg relative z-50">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24"
             stroke="currentColor">
@@ -174,9 +174,9 @@
                 d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
         </svg>
         <span>09, 10 e 11 de Abril de 2026 | Alphaville – SP</span>
-    </div>
+    </div> -->
 
-    <section class="relative w-full min-h-[90vh] flex items-center">
+    <section class="relative w-full min-h-screen lg:min-h-[90vh] flex items-center overflow-hidden bg-black">
 
         <div class="absolute inset-0 w-full h-full z-0">
             <div
@@ -185,68 +185,88 @@
             <div class="absolute inset-0 w-full h-full bg-gradient-fade-dark z-10"></div>
         </div>
 
-        <div class="container mx-auto px-6 lg:px-12 relative z-20 h-full">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center h-full">
+        <div class="container mx-auto px-6 lg:px-12 relative z-20 h-full py-12 lg:py-0">
+            <div class="flex flex-col lg:grid lg:grid-cols-12 gap-0 lg:gap-12 items-center h-full">
 
-                <div class="lg:col-span-6 flex flex-col justify-center pt-10 lg:pt-0">
-
-                    <div class="mb-8 fade-in-up">
-                        <div class="inline-block border-l-4 border-primary pl-4">
-                            <h2 class="text-4xl font-bold leading-none tracking-tighter text-white">IMERSÃO<span
-                                    class="text-primary text-glow"> NCI</span></h2>
-                            <p class="text-xs font-semibold tracking-[0.3em] text-primary uppercase mt-1">Treinamento
-                                Presencial</p>
-                        </div>
+                <div
+                    class="order-1 lg:order-2 lg:col-span-6 relative h-[450px] md:h-[600px] lg:h-[750px] flex items-end justify-center lg:justify-end fade-in-up delay-200 pointer-events-none">
+                    <div
+                        class="absolute top-1/2 left-1/2 lg:left-auto lg:right-20 transform -translate-x-1/2 lg:translate-x-0 -translate-y-1/2 w-[300px] h-[300px] lg:w-[450px] lg:h-[450px] rounded-full border border-primary/10 bg-primary/5 blur-[80px] z-10">
                     </div>
 
-                    <h1
-                        class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-[1.15] mb-6 fade-in-up delay-100">
-                        3 dias intensivos de conteúdo <span class="block text-primary mt-2 text-glow">estratégico e
-                            prático</span>
-                    </h1>
-
-                    <p class="text-lg text-mutedText mb-8 leading-relaxed max-w-lg fade-in-up delay-200">
-                        Uma imersão presencial criada para empresários e donos de imobiliárias que desejam <strong
-                            class="text-white border-b border-primary">estruturar, organizar e escalar</strong>
-                        seus negócios com processos claros, cultura forte e vendas consistentes.
-                    </p>
-
-                    <div class="fade-in-up delay-300">
-                        <a href="#"
-                            class="group relative inline-flex items-center justify-center px-8 py-4 text-base font-bold text-black transition-all duration-300 bg-primary rounded-sm shadow-[0_0_20px_rgba(241,202,108,0.3)] hover:bg-white hover:text-black hover:shadow-[0_0_30px_rgba(255,255,255,0.4)] hover:-translate-y-1 overflow-hidden">
-                            <span class="relative uppercase tracking-widest">GARANTIR MINHA VAGA</span>
-                            <svg class="w-5 h-5 ml-2 -mr-1 transition-transform group-hover:translate-x-1"
-                                fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd"
-                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </a>
-                        <p class="mt-4 text-xs text-zinc-500 font-medium flex items-center">
-                            <span class="w-2 h-2 rounded-full bg-primary mr-2 animate-pulse"></span>
-                            Vagas limitadas para este mês
-                        </p>
-                    </div>
+                    <img src="./assets/img/hero-persona.png" alt="Dário Ferraço"
+                        class="relative z-20 h-full w-auto object-cover object-top"
+                        style="mask-image: linear-gradient(to bottom, black 75%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%);">
                 </div>
 
                 <div
-                    class="lg:col-span-6 relative h-[500px] lg:h-[700px] flex items-end justify-center lg:justify-end fade-in-up delay-200 pointer-events-none">
+                    class="order-2 lg:order-1 lg:col-span-6 flex flex-col justify-center -mt-28 md:-mt-40 lg:mt-0 relative z-30 text-center lg:text-left">
 
                     <div
-                        class="absolute top-1/2 left-1/2 lg:left-auto lg:right-20 transform -translate-x-1/2 lg:translate-x-0 -translate-y-1/2 w-[400px] h-[400px] rounded-full border border-primary/10 bg-primary/5 blur-[80px] z-10">
+                        class="absolute lg:relative top-[-370px] right-4 lg:top-0 lg:right-0 z-40 flex gap-2 lg:mb-6 justify-center lg:justify-start">
+                        <span
+                            class="bg-surface/60 backdrop-blur-md px-3 py-1 rounded-full border border-white/10 text-[13px] uppercase tracking-widest text-primary font-bold">
+                            4ª Edição
+                        </span>
+                        <span
+                            class="bg-primary/10 backdrop-blur-md px-3 py-1 rounded-full border border-primary/20 text-[13px] uppercase tracking-widest text-primary font-bold">
+                            Vagas Limitadas
+                        </span>
                     </div>
 
-                    <img src="./assets/img/hero-persona.png" alt="Especialista NR-01"
-                        class="relative z-20 h-full w-auto object-cover object-top"
-                        style="mask-image: linear-gradient(to bottom, black 80%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%); filter: drop-shadow(0 0 0 rgba(0,0,0,0));">
+                    <div class="mb-2 fade-in-up">
+                        <h1
+                            class="font-serif italic text-6xl md:text-7xl lg:text-10xl leading-tight tracking-tight text-transparent bg-clip-text bg-gradient-to-br from-[#B3731A] via-[#D99726] to-[#E0B96C] filter drop-shadow-[0_0_15px_rgba(179,115,26,0.3)]">
+                            IMERSÃO NCI
+                        </h1>
+                        <h2
+                            class="text-lg md:text-2xl font-medium tracking-[0.2em] text-white uppercase mt-2 opacity-90">
+                            Novo Ciclo Imobiliário
+                        </h2>
+                    </div>
 
                     <div
-                        class="absolute bottom-20 left-0 lg:left-10 z-30 bg-surface/80 backdrop-blur-md p-5 rounded border border-white/10 border-l-4 border-l-primary max-w-xs animate-float hidden lg:block shadow-2xl">
-                        <p class="text-sm font-bold text-white mb-1">4ª Edição</p>
-                        <p class="text-xs text-gray-400">Novo Ciclo Imobiliário | <span
-                                class="text-primary font-bold">Vagas Limitadas</span>.</p>
+                        class="flex flex-col sm:flex-row items-center lg:justify-start sm:gap-8 my-4 fade-in-up delay-100 justify-center">
+                        <div class="flex items-center gap-3 text-gray-300">
+                            <i class="far fa-calendar-alt text-primary text-xl"></i>
+                            <span class="text-sm md:text-base font-medium">09, 10 e 11 de Abril de 2026</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-gray-300">
+                            <i class="fas fa-map-marker-alt text-primary text-xl"></i>
+                            <span class="text-sm md:text-base font-medium">Alphaville – SP</span>
+                        </div>
+                    </div>
+
+                    <p
+                        class="text-lg md:text-xl text-mutedText mb-10 leading-relaxed max-w-lg mx-auto lg:mx-0 fade-in-up delay-200">
+                        Uma imersão presencial criada para empresários e donos de imobiliárias que desejam
+                        <strong class="text-white">estruturar, organizar e escalar</strong> seus negócios com processos
+                        claros.
+                    </p>
+
+                    <div class="fade-in-up delay-300 flex flex-col items-center lg:items-start gap-6">
+                        <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                            <a href="#ingressos"
+                                class="group relative inline-flex items-center justify-center px-10 py-4 text-base font-bold text-black transition-all duration-300 bg-gradient-to-br from-[#B3731A] via-[#D99726] to-[#E0B96C] rounded-lg shadow-[0_10px_30px_-10px_rgba(179,115,26,0.5)] hover:brightness-110 hover:shadow-[0_15px_40px_-10px_rgba(179,115,26,0.7)] hover:-translate-y-1">
+                                <span class="uppercase tracking-widest">Garantir Minha Vaga</span>
+                                <i class="fas fa-arrow-right ml-3 transition-transform group-hover:translate-x-1"></i>
+                            </a>
+
+                            <a href="#sobre"
+                                class="inline-flex items-center justify-center px-10 py-4 text-base font-bold text-primary transition-all duration-300 border-2 border-primary/60 rounded-lg hover:bg-primary hover:text-black hover:border-primary">
+                                <span class="uppercase tracking-widest">Conhecer a Imersão</span>
+                            </a>
+                        </div>
+
+                        <div class="flex items-center gap-3 text-gray-400 mt-4 italic">
+                            <i class="fas fa-sparkles text-primary text-sm md:text-base"></i>
+                            <span class="text-sm md:text-lg tracking-wide leading-relaxed">
+                                ✨ 3 dias intensivos de conteúdo estratégico e prático
+                            </span>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -566,9 +586,10 @@
                     prazo.
                 </p>
 
-                <a href="#"
-                    class="group relative inline-flex items-center justify-center px-12 py-5 text-sm md:text-base font-bold text-[#050505] transition-all duration-300 bg-gradient-to-r from-[#e5b751] to-[#f1ca6c] rounded-lg hover:from-white hover:to-gray-200 hover:-translate-y-1 overflow-hidden">
-                    <span class="relative uppercase tracking-widest">Garantir Minha Vaga</span>
+                <a href="#ingressos"
+                    class="group relative inline-flex items-center justify-center px-10 py-4 text-base font-bold text-black transition-all duration-300 bg-gradient-to-br from-[#B3731A] via-[#D99726] to-[#E0B96C] rounded-lg shadow-[0_10px_30px_-10px_rgba(179,115,26,0.5)] hover:brightness-110 hover:shadow-[0_15px_40px_-10px_rgba(179,115,26,0.7)] hover:-translate-y-1">
+                    <span class="uppercase tracking-widest">Garantir Minha Vaga</span>
+                    <!--  <i class="fas fa-arrow-right ml-3 transition-transform group-hover:translate-x-1"></i> -->
                     <svg class="w-5 h-5 ml-3 transition-transform duration-300 group-hover:translate-x-2"
                         fill="currentColor" viewBox="0 0 20 20">
                         <path fill-rule="evenodd"
@@ -999,126 +1020,152 @@
     </section> -->
 
     <section class="relative py-24 bg-[#080808] text-white overflow-visible font-sans">
-    
-    <div class="absolute top-10 left-[-10%] w-[500px] h-[500px] bg-[#C18F66]/5 blur-[120px] rounded-full pointer-events-none"></div>
 
-    <div class="container mx-auto px-6 lg:px-12 relative z-10">
-
-        <div class="mb-20 max-w-2xl">
-            <span class="text-[#C18F66] font-sans tracking-[0.2em] uppercase text-sm font-semibold mb-4 block">
-                O Que Você Vai Aprender
-            </span>
-            <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl text-white leading-tight">
-                Conteúdo <br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#C18F66] to-[#E8C3A5]">
-                    Estratégico
-                </span>
-            </h2>
+        <div
+            class="absolute top-10 left-[-10%] w-[500px] h-[500px] bg-[#C18F66]/5 blur-[120px] rounded-full pointer-events-none">
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
+        <div class="container mx-auto px-6 lg:px-12 relative z-10">
 
-            <div class="lg:col-span-7 space-y-2">
-                
-                <div class="group border-b border-white/10 pb-6 mb-6">
-                    <div class="flex flex-col md:flex-row md:items-start gap-4 md:gap-8">
-                        <span class="font-serif italic text-[#C18F66] text-2xl md:text-3xl font-light">01</span>
-                        <div>
-                            <h3 class="text-xl md:text-2xl font-medium tracking-tight text-gray-200 group-hover:text-white transition-colors mb-3">
-                                Recrutamento de Elite
-                            </h3>
-                            <p class="text-gray-400 leading-relaxed text-sm md:text-base">
-                                Aprenda o método para atrair e selecionar talentos que não buscam apenas comissão, mas sim o crescimento alinhado à sua cultura. Estruturação de <strong class="text-gray-200 font-medium">fit cultural e processos seletivos blindados</strong>.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="group border-b border-white/10 pb-6 mb-6">
-                    <div class="flex flex-col md:flex-row md:items-start gap-4 md:gap-8">
-                        <span class="font-serif italic text-[#C18F66] text-2xl md:text-3xl font-light">02</span>
-                        <div>
-                            <h3 class="text-xl md:text-2xl font-medium tracking-tight text-gray-200 group-hover:text-white transition-colors mb-3">
-                                Cultura e Mentalidade
-                            </h3>
-                            <p class="text-gray-400 leading-relaxed text-sm md:text-base">
-                                Descubra como transformar sua imobiliária em um organismo vivo onde os <strong class="text-gray-200 font-medium">processos rodam com autonomia</strong>. O fim definitivo da era do empresário "tarefeiro".
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="group border-b border-white/10 pb-6 mb-6">
-                    <div class="flex flex-col md:flex-row md:items-start gap-4 md:gap-8">
-                        <span class="font-serif italic text-[#C18F66] text-2xl md:text-3xl font-light">03</span>
-                        <div>
-                            <h3 class="text-xl md:text-2xl font-medium tracking-tight text-gray-200 group-hover:text-white transition-colors mb-3">
-                                Gestão Comercial Previsível
-                            </h3>
-                            <p class="text-gray-400 leading-relaxed text-sm md:text-base">
-                                Pare de depender da sorte nas vendas. Implemente <strong class="text-gray-200 font-medium">indicadores de performance (KPIs)</strong> e rituais de gestão que garantem constância e previsibilidade no seu faturamento mensal.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div class="mb-20 max-w-2xl">
+                <span class="text-[#C18F66] font-sans tracking-[0.2em] uppercase text-sm font-semibold mb-4 block">
+                    O Que Você Vai Aprender
+                </span>
+                <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl text-white leading-tight">
+                    Conteúdo <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#C18F66] to-[#E8C3A5]">
+                        Estratégico
+                    </span>
+                </h2>
             </div>
 
-            <div class="lg:col-span-5 flex flex-col gap-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
 
-                <div class="bg-[#121212] border border-white/5 rounded-3xl p-10 flex flex-col justify-center items-start group hover:border-[#C18F66]/30 transition-all duration-500 shadow-xl">
-                    <span class="text-6xl md:text-7xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-[#C18F66] to-[#E8C3A5] mb-4 drop-shadow-sm">
-                        500+
-                    </span>
-                    <h4 class="text-white text-lg font-medium mb-2">Empresários Impactados</h4>
-                    <p class="text-gray-500 text-sm leading-relaxed">
-                        Líderes que já transformaram a realidade de seus negócios aplicando a metodologia NCI.
-                    </p>
+                <div class="lg:col-span-7 space-y-2">
+
+                    <div class="group border-b border-white/10 pb-6 mb-6">
+                        <div class="flex flex-col md:flex-row md:items-start gap-4 md:gap-8">
+                            <span class="font-serif italic text-[#C18F66] text-2xl md:text-3xl font-light">01</span>
+                            <div>
+                                <h3
+                                    class="text-xl md:text-2xl font-medium tracking-tight text-gray-200 group-hover:text-white transition-colors mb-3">
+                                    Recrutamento de Elite
+                                </h3>
+                                <p class="text-gray-400 leading-relaxed text-sm md:text-base">
+                                    Aprenda o método para atrair e selecionar talentos que não buscam apenas comissão,
+                                    mas sim o crescimento alinhado à sua cultura. Estruturação de <strong
+                                        class="text-gray-200 font-medium">fit cultural e processos seletivos
+                                        blindados</strong>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group border-b border-white/10 pb-6 mb-6">
+                        <div class="flex flex-col md:flex-row md:items-start gap-4 md:gap-8">
+                            <span class="font-serif italic text-[#C18F66] text-2xl md:text-3xl font-light">02</span>
+                            <div>
+                                <h3
+                                    class="text-xl md:text-2xl font-medium tracking-tight text-gray-200 group-hover:text-white transition-colors mb-3">
+                                    Cultura e Mentalidade
+                                </h3>
+                                <p class="text-gray-400 leading-relaxed text-sm md:text-base">
+                                    Descubra como transformar sua imobiliária em um organismo vivo onde os <strong
+                                        class="text-gray-200 font-medium">processos rodam com autonomia</strong>. O fim
+                                    definitivo da era do empresário "tarefeiro".
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group border-b border-white/10 pb-6 mb-6">
+                        <div class="flex flex-col md:flex-row md:items-start gap-4 md:gap-8">
+                            <span class="font-serif italic text-[#C18F66] text-2xl md:text-3xl font-light">03</span>
+                            <div>
+                                <h3
+                                    class="text-xl md:text-2xl font-medium tracking-tight text-gray-200 group-hover:text-white transition-colors mb-3">
+                                    Gestão Comercial Previsível
+                                </h3>
+                                <p class="text-gray-400 leading-relaxed text-sm md:text-base">
+                                    Pare de depender da sorte nas vendas. Implemente <strong
+                                        class="text-gray-200 font-medium">indicadores de performance (KPIs)</strong> e
+                                    rituais de gestão que garantem constância e previsibilidade no seu faturamento
+                                    mensal.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="relative bg-gradient-to-br from-[#C18F66] to-[#a67751] rounded-3xl p-10 overflow-hidden shadow-[0_10px_40px_rgba(193,143,102,0.15)] group">
-                    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20 mix-blend-overlay pointer-events-none"></div>
-                    
-                    <div class="relative z-10 h-full flex flex-col justify-center">
-                        <span class="text-black/60 uppercase tracking-[0.2em] text-xs font-bold mb-3">Edição Especial</span>
-                        <h4 class="text-[#080808] font-serif italic text-4xl md:text-5xl leading-tight mb-4">
-                            A 4ª Edição <br>
-                        </h4>
-                        <p class="text-[#080808]/80 text-base font-medium max-w-[80%] border-l-2 border-[#080808]/20 pl-4">
-                            Participe do maior encontro prático de donos de imobiliária do Brasil.
+                <div class="lg:col-span-5 flex flex-col gap-6">
+
+                    <div
+                        class="bg-[#121212] border border-white/5 rounded-3xl p-10 flex flex-col justify-center items-start group hover:border-[#C18F66]/30 transition-all duration-500 shadow-xl">
+                        <span
+                            class="text-6xl md:text-7xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-[#C18F66] to-[#E8C3A5] mb-4 drop-shadow-sm">
+                            500+
+                        </span>
+                        <h4 class="text-white text-lg font-medium mb-2">Empresários Impactados</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                            Líderes que já transformaram a realidade de seus negócios aplicando a metodologia NCI.
                         </p>
                     </div>
+
+                    <div
+                        class="relative bg-gradient-to-br from-[#C18F66] to-[#a67751] rounded-3xl p-10 overflow-hidden shadow-[0_10px_40px_rgba(193,143,102,0.15)] group">
+                        <div
+                            class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20 mix-blend-overlay pointer-events-none">
+                        </div>
+
+                        <div class="relative z-10 h-full flex flex-col justify-center">
+                            <span class="text-black/60 uppercase tracking-[0.2em] text-xs font-bold mb-3">Edição
+                                Especial</span>
+                            <h4 class="text-[#080808] font-serif italic text-4xl md:text-5xl leading-tight mb-4">
+                                A 4ª Edição <br>
+                            </h4>
+                            <p
+                                class="text-[#080808]/80 text-base font-medium max-w-[80%] border-l-2 border-[#080808]/20 pl-4">
+                                Participe do maior encontro prático de donos de imobiliária do Brasil.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
 
-        </div>
-
-        <div class="mt-32 relative">
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-32 bg-[#C18F66]/5 blur-[100px] pointer-events-none"></div>
-
-            <div class="relative max-w-4xl mx-auto text-center px-4">
-                <div class="mb-8 flex justify-center">
-                    <svg class="w-12 h-12 text-[#C18F66]/40" fill="currentColor" viewBox="0 0 32 32">
-                        <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"/>
-                    </svg>
+            <div class="mt-32 relative">
+                <div
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-32 bg-[#C18F66]/5 blur-[100px] pointer-events-none">
                 </div>
 
-                <blockquote class="font-serif text-2xl md:text-3xl lg:text-4xl text-gray-200 leading-tight mb-10">
-                    "A Imersão NCI não é sobre teoria. É sobre o <span class="text-white italic relative inline-block">
-                        campo de batalha
-                        <span class="absolute -bottom-1 left-0 w-full h-[2px] bg-[#C18F66]/60"></span>
-                    </span>. É o método que valida quem escala e quem apenas sobrevive no mercado imobiliário."
-                </blockquote>
-                
-                <cite class="flex flex-col items-center not-italic">
-                    <div class="w-16 h-[1px] bg-[#C18F66] mb-5"></div>
-                    <span class="block text-white font-sans font-bold tracking-[0.15em] uppercase text-sm mb-1">Dário Ferraço</span>
-                    <span class="text-gray-500 text-xs font-sans uppercase tracking-[0.2em]">Idealizador NCI</span>
-                </cite>
-            </div>
-        </div>
+                <div class="relative max-w-4xl mx-auto text-center px-4">
+                    <div class="mb-8 flex justify-center">
+                        <svg class="w-12 h-12 text-[#C18F66]/40" fill="currentColor" viewBox="0 0 32 32">
+                            <path
+                                d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                        </svg>
+                    </div>
 
-    </div>
+                    <blockquote class="font-serif text-2xl md:text-3xl lg:text-4xl text-gray-200 leading-tight mb-10">
+                        "A Imersão NCI não é sobre teoria. É sobre o <span
+                            class="text-white italic relative inline-block">
+                            campo de batalha
+                            <span class="absolute -bottom-1 left-0 w-full h-[2px] bg-[#C18F66]/60"></span>
+                        </span>. É o método que valida quem escala e quem apenas sobrevive no mercado imobiliário."
+                    </blockquote>
+
+                    <cite class="flex flex-col items-center not-italic">
+                        <div class="w-16 h-[1px] bg-[#C18F66] mb-5"></div>
+                        <span
+                            class="block text-white font-sans font-bold tracking-[0.15em] uppercase text-sm mb-1">Dário
+                            Ferraço</span>
+                        <span class="text-gray-500 text-xs font-sans uppercase tracking-[0.2em]">Idealizador NCI</span>
+                    </cite>
+                </div>
+            </div>
+
+        </div>
     </section>
 
     <section class="relative w-full py-24 lg:py-32 bg-[#0a0a0a] text-white overflow-hidden">
@@ -1186,9 +1233,10 @@
                                 Ferraço</span>
                         </div>
 
-                        <a href="#"
-                            class="group relative inline-flex items-center justify-center px-8 py-3 text-sm font-bold text-black transition-all duration-300 bg-primary rounded-sm shadow-[0_0_15px_rgba(241,202,108,0.3)] hover:bg-white hover:shadow-[0_0_25px_rgba(255,255,255,0.5)] overflow-hidden">
-                            <span class="relative uppercase tracking-widest">QUERO GARANTIR MINHA VAGA AGORA</span>
+                        <a href="#ingressos"
+                            class="group relative inline-flex items-center justify-center px-10 py-4 text-base font-bold text-black transition-all duration-300 bg-gradient-to-br from-[#B3731A] via-[#D99726] to-[#E0B96C] rounded-lg shadow-[0_10px_30px_-10px_rgba(179,115,26,0.5)] hover:brightness-110 hover:shadow-[0_15px_40px_-10px_rgba(179,115,26,0.7)] hover:-translate-y-1">
+                            <span class="uppercase tracking-widest">
+                                QUERO GARANTIR MINHA VAGA AGORA</span>
                             <svg class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="currentColor"
                                 viewBox="0 0 20 20">
                                 <path fill-rule="evenodd"
@@ -1465,11 +1513,9 @@
                         </p>
 
                         <div class="pt-2">
-                            <a href="#"
-                                class="group relative inline-flex items-center justify-center w-full md:w-auto px-5 py-4 text-base font-bold text-black transition-all duration-500 bg-primary rounded-sm shadow-[0_0_30px_rgba(241,202,108,0.2)] hover:shadow-[0_0_50px_rgba(241,202,108,0.4)] hover:-translate-y-1 overflow-hidden">
-                                <span
-                                    class="absolute inset-0 w-full h-full bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></span>
-                                <span class="relative uppercase tracking-widest">QUERO GARANTIR MINHA VAGA AGORA</span>
+                            <a href="#ingressos"
+                                class="group relative inline-flex items-center justify-center px-10 py-4 text-base font-bold text-black transition-all duration-300 bg-gradient-to-br from-[#B3731A] via-[#D99726] to-[#E0B96C] rounded-lg shadow-[0_10px_30px_-10px_rgba(179,115,26,0.5)] hover:brightness-110 hover:shadow-[0_15px_40px_-10px_rgba(179,115,26,0.7)] hover:-translate-y-1">
+                                <span class="uppercase tracking-widest">QUERO GARANTIR MINHA VAGA AGORA</span>
                                 <svg class="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-2"
                                     fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd"
